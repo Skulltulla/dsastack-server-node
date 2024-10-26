@@ -1,0 +1,25 @@
+{
+  "name": "dsastack-server-node",
+  "version": "0.0.0",
+  "description": "dsastack-server with node.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skulltulla/dsastack-server-node.git"
+  },
+  "keywords": [
+    "dsa",
+    "stack",
+    "server",
+    "node"
+  ],
+  "author": "Michael Peacock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skulltulla/dsastack-server-node/issues"
+  },
+  "homepage": "https://github.com/Skulltulla/dsastack-server-node#readme"
+}
