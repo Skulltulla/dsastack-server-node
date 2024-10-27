@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  dbpg:
+    environment:
+      - POSTGRES_PASSWORD_FILE=/pgpwd.env
+    volumes:
+      - ./pgpwd.env:/pgpwd.env:ro

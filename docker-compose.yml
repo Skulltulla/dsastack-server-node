@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  dbpg:
+    image: postgres
+    restart: always
+    shm_size: 128MB
+    ports:
+      - "5432:5432"
