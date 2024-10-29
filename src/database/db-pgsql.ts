@@ -1,6 +1,6 @@
-import "npm:reflect-metadata";
+import "reflect-metadata";
 
-import { autoInjectable } from "npm:tsyringe";
+import { autoInjectable } from "tsyringe";
 import type IDatabase from "./db-interface.ts";
 
 /**

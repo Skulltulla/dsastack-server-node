@@ -1,7 +1,7 @@
 
 ## Environment
 
-- Deno
+- Node.js
 - tsyringe
 - Docker
   - PostgreSQL

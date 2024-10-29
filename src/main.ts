@@ -1,12 +1,14 @@
-import "npm:reflect-metadata";
+import "reflect-metadata";
 
-import { container } from "npm:tsyringe";
-import App from "./app/app.ts";
-import DatabasePg from "./database/db-pgsql.ts";
+import { container } from "tsyringe";
+import App from "./app/app.js";
+import DatabasePg from "./database/db-pgsql.js";
 
-if (import.meta.main) {
-    const dbpg = container.resolve(DatabasePg)
+function main() {
+    const dbpg = container.resolve(DatabasePg);
     const app = new App(dbpg);
     app.start();
     app.stop();
 }
+
+main();

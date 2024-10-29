@@ -1,8 +1,8 @@
-import "npm:reflect-metadata";
+import "reflect-metadata";
 
-import { autoInjectable } from "npm:tsyringe";
-import type { IApp } from "./app-interface.ts";
-import type IDatabase from "../database/db-interface.ts";
+import { autoInjectable } from "tsyringe";
+import type { IApp } from "./app-interface.js";
+import type IDatabase from "../database/db-interface.js";
 
 @autoInjectable()
 export default class App implements IApp {
