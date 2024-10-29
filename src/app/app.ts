@@ -14,6 +14,13 @@ export default class App implements IApp {
 
     public async start() {
         console.log(`App::start()`);
+
+        try {
+            await this.database?.runMigrationsAsync();
+        } catch (e) {
+            throw e;
+        }
+
         await this.database?.connectAsync();
     }
 
