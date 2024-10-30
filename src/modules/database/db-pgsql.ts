@@ -1,7 +1,7 @@
 import "reflect-metadata";
 
 import { autoInjectable } from "tsyringe";
-import type IDatabase from "./db-interface.ts";
+import type IDatabase from "./db-interface.js";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { migrate } from "drizzle-orm/node-postgres/migrator";
 

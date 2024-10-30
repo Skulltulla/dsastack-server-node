@@ -1,8 +1,8 @@
 import "reflect-metadata";
 
 import { container } from "tsyringe";
-import App from "./app/app.js";
-import DatabasePg from "./database/db-pgsql.js";
+import App from "./modules/app/app.js";
+import DatabasePg from "./modules/database/db-pgsql.js";
 
 function main() {
     const dbpg = container.resolve(DatabasePg);
